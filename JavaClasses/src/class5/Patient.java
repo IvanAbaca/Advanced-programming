@@ -2,15 +2,15 @@ package class5;
 
 public class Patient implements Comparable<Patient> {
     private String name;
-    private int priority; // Minimun heap
+    private int triage; // Minimun heap
 
     public Patient(String name, int priority) {
         this.name = name;
-        this.priority = priority;
+        this.triage = priority;
     }
 
     public int getPriority() {
-        return priority;
+        return triage;
     }
 
     public String getName() {
@@ -19,11 +19,11 @@ public class Patient implements Comparable<Patient> {
 
     @Override
     public int compareTo(Patient other) {
-        return Integer.compare(this.priority, other.getPriority());
+        return Integer.compare(this.triage, other.getPriority());
     }
 
     @Override
     public String toString() {
-        return name + " con prioridad " + priority;
+        return name + " con prioridad " + triage;
     }
 }
