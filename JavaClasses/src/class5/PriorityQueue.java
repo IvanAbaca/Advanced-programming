@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PriorityQueue<T extends Comparable<T>> {
-    private List<T> heap; //Lista generica (Se debe sobrescribir el metodo compare)
+    public List<T> heap; //Lista generica (Se debe sobrescribir el metodo compare)
 
     //Constructor
     public PriorityQueue() {
